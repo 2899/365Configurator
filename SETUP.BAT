@@ -15,51 +15,51 @@ IF EXIST "%WINDIR%\SYSTEM32\UAC_TEST.XB" ( DEL "%WINDIR%\SYSTEM32\UAC_TEST.XB" )
 PUSHD "%~DP0"
 MODE CON COLS=52 LINES=20
 TITLE Office365 Downloader^&Installer-FCZBL.VIP
-VER|FINDSTR "°æ±¾">NUL&&SET SYSLANGUAGE=CHS||SET SYSLANGUAGE=ENG
+VER|FINDSTR "ç‰ˆæœ¬">NUL&&SET SYSLANGUAGE=CHS||SET SYSLANGUAGE=ENG
 IF "%SYSLANGUAGE%"=="CHS" (
-SET BOX1=       Î´ÔÚ±¾Ä¿Â¼·¢ÏÖ365ÀëÏß°ü£¡
-SET BOX2=          ÇëÑ¡ÔñÒªÖ´ÐÐµÄ²Ù×÷£º
-SET BOX3=ÈººÅ£º
-SET BOX4=Ð¡°×-°×
-SET BOX5=   ÇëÑ¡ÔñOffice365µÄÓïÑÔ£º
-SET BOX6=¼òÌåÖÐÎÄ  
-SET BOX7=·±ÌåÖÐÎÄ  
-SET BOX8=ÇëÊäÈë¶ÔÓ¦µÄÊý×Ö£¬²»°üÀ¨À¨ºÅ£º
-SET BOX9=    ÇëÑ¡ÔñOfficeÎ»Êý£º
-SET BOX10=      Ö´ÐÐÇ°µÄ×îºóÈ·ÈÏ£º
-SET BOX11=   ³ÌÐò°æ±¾£º
-SET BOX12=   ³ÌÐòÓïÑÔ£º
-SET BOX13=   ³ÌÐòÎ»Êý£º
-SET BOX14=°´ÈÎÒâ¼ü¼ÌÐø£»È¡ÏûÇëÖ±½Ó¹Ø±Õ±¾´°¿Ú¡£
-SET BOX15=ÕýÔÚÏÂÔØ
-SET BOX16=Çë²»Òª¹Ø±Õ´Ë´°¿Ú£¡£¡£¡
-SET BOX17=         ÏÂÔØÍê³É£¬°´ÈÎÒâ¼üÍË³ö¡£
-SET BOX18=ÈçÐèÁ¢¼´°²×°£¬ÇëÔÙ´ÎÔËÐÐ±¾³ÌÐò£¡
+SET BOX1=       æœªåœ¨æœ¬ç›®å½•å‘çŽ°365ç¦»çº¿åŒ…ï¼
+SET BOX2=          è¯·é€‰æ‹©è¦æ‰§è¡Œçš„æ“ä½œï¼š
+SET BOX3=ç¾¤å·ï¼š
+SET BOX4=å°ç™½-ç™½
+SET BOX5=   è¯·é€‰æ‹©Office365çš„è¯­è¨€ï¼š
+SET BOX6=ç®€ä½“ä¸­æ–‡  
+SET BOX7=ç¹ä½“ä¸­æ–‡  
+SET BOX8=è¯·è¾“å…¥å¯¹åº”çš„æ•°å­—ï¼Œä¸åŒ…æ‹¬æ‹¬å·ï¼š
+SET BOX9=    è¯·é€‰æ‹©Officeä½æ•°ï¼š
+SET BOX10=      æ‰§è¡Œå‰çš„æœ€åŽç¡®è®¤ï¼š
+SET BOX11=   ç¨‹åºç‰ˆæœ¬ï¼š
+SET BOX12=   ç¨‹åºè¯­è¨€ï¼š
+SET BOX13=   ç¨‹åºä½æ•°ï¼š
+SET BOX14=æŒ‰ä»»æ„é”®ç»§ç»­ï¼›å–æ¶ˆè¯·ç›´æŽ¥å…³é—­æœ¬çª—å£ã€‚
+SET BOX15=æ­£åœ¨ä¸‹è½½
+SET BOX16=è¯·ä¸è¦å…³é—­æ­¤çª—å£ï¼ï¼ï¼
+SET BOX17=         ä¸‹è½½å®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡ºã€‚
+SET BOX18=å¦‚éœ€ç«‹å³å®‰è£…ï¼Œè¯·å†æ¬¡è¿è¡Œæœ¬ç¨‹åºï¼
 SET BOX18_5= 
-SET BOX19=ÒÑ¼ì²âµ½µÄ°²×°°üÐÅÏ¢£º
-SET BOX20=³ÌÐò°æ±¾£º
-SET BOX21=³ÌÐòÓïÑÔ£º
-SET BOX22=³ÌÐòÎ»Êý£º
-SET BOX23=ÈôÈ·ÈÏÎÞÎó£¬Çë»Ø³µ£»ÐèÖØÐÂÏÂÔØ£¬ÇëÊä2ºó»Ø³µ£º
-SET BOX24=ÇëÑ¡Ôñ²»ÐèÒª°²×°µÄ×é¼þ£º
-SET BOX25=ÀýÈç²»ÐèÒª°²×°Outlook£¬ÔòÊäÈë7¼´¿É
-SET BOX26=     Ö§³Ö¶àÑ¡,Èç²»ÐèÒªWord,Excel,ÔòÊä12
-SET BOX27=ÇëÊäÈëÊý×Öºó»Ø³µ»òÖ±½Ó»Ø³µ£º
-SET BOX28=È·ÈÏÐèÒªÅÅ³ýµÄ×é¼þÁÐ±í£º
-SET BOX29=°´ÈÎÒâ¼ü¼ÌÐø°²×°,ÒªÍË³öÇëÖ±½Ó¹Ø±Õ±¾´°¿Ú¡£
-SET BOX30=°´ÈÎÒâ¼ü¼ÌÐø°²×°¡£
-SET BOX31=  ÕýÔÚ°²×°
-SET BOX32= °²×°Íê³É
-SET BOX33=°´ÈÎÒâ¼üÍË³ö¡£
-SET BOX34=XPÏµÍ³ÎÞ·¨°²×°Office365£¡£¡£¡
-SET BOX35=³öÏÖ´íÎó£¬ÏÂÔØÊ§°Ü¡£
-SET BOX37=³öÏÖ´íÎó£¬°²×°Ê§°Ü¡£
-SET BOX38=¸ü¶àÓïÑÔ...
-SET BOX39=Ó¢Óï   
-SET BOX40=ÈÕÓï    
-SET BOX41=º«Óï  
-SET BOX42=ÏÂÔØÀëÏß°ü£º
-SET BOX43=ÔÚÏß°²×°  £º
+SET BOX19=å·²æ£€æµ‹åˆ°çš„å®‰è£…åŒ…ä¿¡æ¯ï¼š
+SET BOX20=ç¨‹åºç‰ˆæœ¬ï¼š
+SET BOX21=ç¨‹åºè¯­è¨€ï¼š
+SET BOX22=ç¨‹åºä½æ•°ï¼š
+SET BOX23=è‹¥ç¡®è®¤æ— è¯¯ï¼Œè¯·å›žè½¦ï¼›éœ€é‡æ–°ä¸‹è½½ï¼Œè¯·è¾“2åŽå›žè½¦ï¼š
+SET BOX24=è¯·é€‰æ‹©ä¸éœ€è¦å®‰è£…çš„ç»„ä»¶ï¼š
+SET BOX25=ä¾‹å¦‚ä¸éœ€è¦å®‰è£…Outlookï¼Œåˆ™è¾“å…¥7å³å¯
+SET BOX26=     æ”¯æŒå¤šé€‰,å¦‚ä¸éœ€è¦Word,Excel,åˆ™è¾“12
+SET BOX27=è¯·è¾“å…¥æ•°å­—åŽå›žè½¦æˆ–ç›´æŽ¥å›žè½¦ï¼š
+SET BOX28=ç¡®è®¤éœ€è¦æŽ’é™¤çš„ç»„ä»¶åˆ—è¡¨ï¼š
+SET BOX29=æŒ‰ä»»æ„é”®ç»§ç»­å®‰è£…,è¦é€€å‡ºè¯·ç›´æŽ¥å…³é—­æœ¬çª—å£ã€‚
+SET BOX30=æŒ‰ä»»æ„é”®ç»§ç»­å®‰è£…ã€‚
+SET BOX31=  æ­£åœ¨å®‰è£…
+SET BOX32= å®‰è£…å®Œæˆ
+SET BOX33=æŒ‰ä»»æ„é”®é€€å‡ºã€‚
+SET BOX34=XPç³»ç»Ÿæ— æ³•å®‰è£…Office365ï¼ï¼ï¼
+SET BOX35=å‡ºçŽ°é”™è¯¯ï¼Œä¸‹è½½å¤±è´¥ã€‚
+SET BOX37=å‡ºçŽ°é”™è¯¯ï¼Œå®‰è£…å¤±è´¥ã€‚
+SET BOX38=æ›´å¤šè¯­è¨€...
+SET BOX39=è‹±è¯­   
+SET BOX40=æ—¥è¯­    
+SET BOX41=éŸ©è¯­  
+SET BOX42=ä¸‹è½½ç¦»çº¿åŒ…ï¼š
+SET BOX43=åœ¨çº¿å®‰è£…  ï¼š
 )
 IF "%SYSLANGUAGE%"=="ENG" (
 SET BOX1= Office365 offline package not found.
@@ -377,7 +377,7 @@ ECHO.
 ECHO.%BOX29%&PAUSE>NUL
 :SETUP2
 ECHO ^<Configuration^>>"%CD%\DATA\SETUP.INFO"
-ECHO   ^<Add SourcePath="%CD%" OfficeClientEdition="%WS%" Branch="Current"^>>>"%CD%\DATA\SETUP.INFO"
+ECHO   ^<Add SourcePath="%CD%" OfficeClientEdition="%WS%"^>>>"%CD%\DATA\SETUP.INFO"
 ECHO     ^<Product ID="O365ProPlusRetail"^>>>"%CD%\DATA\SETUP.INFO"
 ECHO       ^<Language ID="%language%" /^>>>"%CD%\DATA\SETUP.INFO"
 IF NOT "%ZDY%"=="N" (FOR /L %%A IN (10,1,19) DO (
@@ -602,7 +602,7 @@ ECHO. ==================================================
 ECHO.
 ECHO.%BOX29%&PAUSE>NUL
 ECHO ^<Configuration^>>"%CD%\DATA\SETUP.INFO"
-ECHO   ^<Add OfficeClientEdition="%WS%" Branch="Current"^>>>"%CD%\DATA\SETUP.INFO"
+ECHO   ^<Add OfficeClientEdition="%WS%"^>>>"%CD%\DATA\SETUP.INFO"
 ECHO     ^<Product ID="O365ProPlusRetail"^>>>"%CD%\DATA\SETUP.INFO"
 ECHO       ^<Language ID="%language%" /^>>>"%CD%\DATA\SETUP.INFO"
 IF NOT "%ZDY%"=="N" (FOR /L %%A IN (10,1,19) DO (
